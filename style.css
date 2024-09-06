@@ -1,0 +1,684 @@
+/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: "Poppins", sans-serif;
+
+    background-color: #fff;
+    
+    
+}
+
+
+
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+}
+  
+  
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:tra;
+    color: white;
+   
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+    height: 60px;
+    position: fixed;
+    background: #83ddd9;
+    backdrop-filter: blur(10px);
+    
+}
+
+.navbar.scrolled {
+    background-color: transparent;
+    
+    
+}
+
+.navbar .logo img {
+   width: 150px;
+   margin: 0 50px;
+   
+}
+
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links
+
+.navbar .nav-links li {
+    position: relative;
+    margin: 0 1rem;
+}
+
+.navbar .nav-links a {
+    color: rgb(40, 35, 35);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 12px;
+    margin: 0 20px;
+    
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links .dropdown:hover .dropbtn {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius:  10px; ;
+}
+
+.navbar .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
+.navbar .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.navbar .hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    border-radius: 5px;
+}
+
+/* Sección Info */
+.info {
+
+    background: linear-gradient(to bottom, #83ddd9, #ffffff); /* Degradado de naranja a rosa */
+    
+    display: flex;
+    flex-direction: row; /* Disposición en fila para pantallas grandes */
+    justify-content: space-around; /* Espaciar los elementos uniformemente */
+    align-items: center;
+    
+    margin-bottom: 50px;
+
+    padding: 30px 80px; /* Añadir un pequeño padding lateral para evitar que quede pegado a los bordes */
+
+}
+
+/* Estilo para la sección "info-somos" */
+.info-somos {
+    display: flex;
+    flex-direction: column; /* Colocar los elementos en columna */
+    align-items: center;
+    margin: 50px;
+    width: 400px;
+}
+
+.info-somos p {
+    font-size: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.info-somos h2 {
+    font-size: 35px;
+    
+}
+
+/* Contenedor de la galería utilizando grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    grid-template-rows: auto auto;
+    gap: 10px;
+    width: 50%;
+    margin: 100px auto; /* Añadir margen para evitar que quede pegado a los bordes */
+    padding: 0 10px; /* Añadir padding lateral */
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+.gallery :hover {
+    transform: scale(1.05); /* Efecto de crecimiento */
+
+}
+
+/* Elemento grande (ocupa todo el ancho) */
+.gallery-item.large {
+    grid-column: 1 / -1;
+    height: 200px;
+    transition: transform 0.3s ease;
+    
+}
+
+/* Ajustar las imágenes al contenedor */
+.gallery-item {
+    transition: transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+    border-radius: 10px ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar sin distorsionar */
+    display: block;
+    
+    
+    
+}
+
+/* Media Queries para tabletas (pantallas medianas de hasta 720px) */
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column; /* Colocar los elementos en columna */
+        align-items: center;
+        margin: 20px 0;
+        padding: 50px 5px; /* Reducir el padding lateral en tabletas */
+    }
+
+    .info-somos {
+        width: 80%; /* Reducir el ancho */
+        margin: 20px;
+    }
+
+    .gallery {
+        width: 80%;
+        grid-template-columns: repeat(3, 1fr); /* Dos columnas en tabletas */
+        margin: 20px auto;
+        padding: 0 5px; /* Reducir el padding lateral en tabletas */
+    }
+
+    .gallery-item.large {
+        height: 250px; /* Reducir altura de la imagen grande */
+    }
+
+    .gallery-item {
+        height: 120px; /* Reducir la altura de las imágenes pequeñas */
+    }
+}
+
+/* Media Queries para celulares (pantallas pequeñas de hasta 480px) */
+@media (max-width: 480px) {
+    .info {
+        flex-direction: column; /* Colocar los elementos en columna */
+        align-items: center;
+        margin: 60px 0;
+        padding: 0 5px; /* Reducir el padding lateral en móviles */
+    }
+
+    .info-somos {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .info-somos p {
+        font-size: 18px; /* Reducir el tamaño del texto */
+    }
+
+    .info-somos h2 {
+        font-size: 30px; /* Reducir el tamaño del título */
+    }
+
+    .gallery {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr); /* Una columna en pantallas pequeñas */
+        margin: 20px auto;
+        padding: 0 5px; /* Reducir el padding lateral en móviles */
+    }
+
+    .gallery-item.large {
+        height: 150px; /* Reducir aún más la altura de la imagen grande */
+    }
+
+    .gallery-item {
+        height: 100px; /* Reducir la altura de las imágenes pequeñas */
+    }
+}
+
+
+/* Estilo general para la sección */
+.text-image-section {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    gap: 20px; /* Espacio entre el texto y la imagen */
+    background-color: #a7e7e4;
+    margin: 0 150px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Estilo para el contenido del texto */
+.text-content {
+    flex: 1; /* Ocupa el espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo del texto */
+    text-align: center;
+    
+    
+}
+
+/* Estilo para el contenido de la imagen */
+.image-content {
+    flex: 1; /* Ocupa el espacio disponible */
+    max-width: 50%; /* Limita el ancho máximo de la imagen */
+}
+
+/* Estilo para la imagen */
+.image-content img {
+    width: 100%; /* La imagen ocupa el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Opcional: añade bordes redondeados */
+    display: block; /*elimina el margen de abajo*/
+    object-fit: cover;
+}
+
+/* Media Queries para pantallas de hasta 720px */
+@media (max-width: 720px) {
+    .text-image-section {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+        text-align: center; /* Centra el texto */
+    }
+
+    .text-content,
+    .image-content {
+        max-width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+        text-align: center;
+    }
+}
+
+/* Media Queries para pantallas de hasta 480px */
+@media (max-width: 480px) {
+    .text-image-section {
+        
+        flex-direction: column-reverse; /* Cambia el orden: imagen abajo, texto arriba */
+        padding: 20px; /* Reducir el padding en pantallas pequeñas */
+        gap: 40px; /* Menor espacio entre los elementos */
+        margin: 0 10px;
+        
+    }
+
+    .text-content {
+        text-align: center; /* Centra el texto */
+        font-size: 14px; /* Reducir el tamaño del texto */
+    }
+
+    .text-content h2 {
+        font-size: 18px; /* Reducir el tamaño del título */
+    }
+
+    .image-content img {
+        border-radius: 5px; /* Bordes menos pronunciados en pantallas pequeñas */
+    }
+}
+
+
+
+.contacto{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin: 30px;
+
+}
+.form-container {
+    
+    width: 350px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+  
+.title {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 800;
+}
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .input {
+    border-radius: 20px;
+    border: 1px solid #c0c0c0;
+    outline: 0 !important;
+    box-sizing: border-box;
+    padding: 12px 15px;
+  }
+  
+  .page-link {
+    text-decoration: underline;
+    margin: 0;
+    text-align: end;
+    color: #747474;
+    text-decoration-color: #747474;
+  }
+  
+  .page-link-label {
+    cursor: pointer;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+  }
+  
+  .page-link-label:hover {
+    color: #000;
+  }
+  
+  .form-btn {
+    padding: 10px 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 !important;
+    outline: 0 !important;
+    background: teal;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  
+  .form-btn:active {
+    box-shadow: none;
+  }
+  
+  .sign-up-label {
+    margin: 0;
+    font-size: 10px;
+    color: #747474;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .sign-up-link {
+    margin-left: 1px;
+    font-size: 11px;
+    text-decoration: underline;
+    text-decoration-color: teal;
+    color: teal;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  
+  .buttons-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  
+  .apple-login-button,
+      .google-login-button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+          rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    gap: 5px;
+  }
+  
+  .apple-login-button {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+  }
+  
+  .google-login-button {
+    border: 2px solid #747474;
+  }
+  
+  .apple-icon,
+      .google-icon {
+    font-size: 18px;
+    margin-bottom: 1px;
+  }
+
+
+
+
+
+
+/* Contenedor general de la sección */
+.eventos-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to top, #a7e7e4, #ffffff);
+    
+    margin-top: 60px;
+
+    border-radius: 20px;
+}
+
+/* Estilo para el título de la sección */
+.eventos-section h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Contenedor de las cards */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para cada card */
+.card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Añadir efecto de movimiento al pasar el mouse */
+.card:hover {
+    transform: scale(1.05); /* Efecto de crecimiento */
+}
+
+/* Contenedor de la imagen */
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Overlay: texto sobre la imagen */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+/* Al pasar el mouse, mostrar el texto */
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+/* ------------------ Media Queries ------------------ */
+
+/* Para pantallas de hasta 720px (tablets) */
+@media (max-width: 720px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Ajusta el tamaño para tablets */
+        margin-bottom: 20px;
+    }
+
+    .eventos-section h2 {
+        font-size: 32px; /* Disminuir el tamaño del título en tablets */
+    }
+}
+
+/* Para pantallas de hasta 480px (móviles) */
+@media (max-width: 480px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    
+    }
+
+    .card {
+        width: 90%; /* Ajusta el tamaño para móviles */
+        margin-bottom: 20px;
+    }
+
+    .eventos-section h2 {
+        font-size: 28px; /* Disminuir el tamaño del título en móviles */
+    }
+}
+
+
+
+
+
+/* Estilo para pantallas pequeñas */
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        
+    }
+    .navbar .logo img {
+        margin: 0;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .navbar .hamburger {
+        display: flex;
+    }
+}
