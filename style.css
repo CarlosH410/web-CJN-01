@@ -154,7 +154,19 @@ body {
     border-radius: 5px;
 }
 
-
+@media (max-width: 480px) {
+    .navbar .dropdown-content {
+        
+        position: relative;
+        background-color: #49c6d4;
+        max-width: 60px;
+        margin: auto;
+        border-radius:  10px; 
+        
+    }
+    
+    
+}
 @media (max-width: 768px) {
 
     .navbar{
