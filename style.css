@@ -11,7 +11,14 @@
 body {
     font-family: "Poppins", sans-serif;
 
-    background-color: #fff;
+    background:linear-gradient(
+        180deg,
+        rgba(131, 221, 217, 1)0%,
+
+        #fff 50%,
+        #83ddd9 100%
+
+    );
     
     
 }
@@ -184,7 +191,7 @@ body {
 /* Sección Info */
 .info {
 
-    background: linear-gradient(to bottom, #83ddd9, #ffffff); /* Degradado de naranja a rosa */
+     /* Degradado de naranja a rosa */
     
     display: flex;
     flex-direction: row; /* Disposición en fila para pantallas grandes */
@@ -572,7 +579,7 @@ body {
 .eventos-section {
     text-align: center;
     padding: 40px 20px;
-    background: linear-gradient(to top, #a7e7e4, #ffffff);
+    
     
     margin-top: 60px;
 
@@ -652,7 +659,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(to top, #a7e7e4, #ffffff);
+    
     color: black;
     padding: 40px 20px;
     padding-bottom: 5PX;
