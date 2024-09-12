@@ -8,6 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    background: linear-gradient(to top, #2c3e50, #bdc3c7);/* Degradado de naranja a rosa */
 }
 
 /* Estilos del navbar */
@@ -155,6 +156,7 @@ body {
 
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -5px);
+
     }
 }
 
