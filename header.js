@@ -1,4 +1,3 @@
-// Menú de hamburguesa
 document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -30,7 +29,3 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 });
-
-
-
-// Cambiar el color de fondo de la barra de navegación al hacer scroll
