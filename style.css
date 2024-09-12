@@ -65,7 +65,7 @@ body {
 }
 
 .navbar.scrolled {
-    background-color: #008080;
+    background-color: #59736d;
 }
 
 .navbar .logo img {
@@ -152,7 +152,7 @@ body {
 /* Estilos del menú responsive */
 @media (max-width: 768px) {
     .navbar {
-        background-color: #068484;
+        background-color: #59736d;
     }
 
     .nav-links {
@@ -165,7 +165,7 @@ body {
         left: 100%;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 128, 128, 0.95);
+        background-color: #59736d;
         transition: all 0.5s ease;
        
     }
@@ -367,7 +367,7 @@ body {
     justify-content: space-between;
     
     gap: 20px; /* Espacio entre el texto y la imagen */
-    background-color: #008080;
+    background-color: #59736d;
     
     margin: 0 200px;
     border-radius: 10px;
@@ -466,7 +466,7 @@ body {
 }
 
 .contact-container {
-    background-color: white;
+    background-color: #59736d;
     padding: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
     border-radius: 10px;
@@ -496,6 +496,7 @@ body {
     margin-bottom: 5px;
     font-size: 1rem;
     color: #333;
+    
 }
 
 .form-group input,
@@ -506,6 +507,7 @@ body {
     border-radius: 30px;
     outline: none;
     transition: border-color 0.3s ease;
+    background-color: #303c3a;
 }
 
 .form-group input:focus,
@@ -515,8 +517,8 @@ body {
 
 .submit-btn {
     padding: 12px;
-    background-color: #83ddd9;
-    color: white;
+    background-color: #303c3a;
+    color:#59736d;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
@@ -657,7 +659,7 @@ body {
 /* Footer */
 .footer {
     
-    background-color: #008080;
+    background-color: #59736d;
     color: black;
     padding: 40px 20px;
     padding-bottom: 5PX;
