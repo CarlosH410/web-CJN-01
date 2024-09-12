@@ -293,7 +293,7 @@ body {
     .info {
         flex-direction: column; /* Colocar los elementos en columna */
         align-items: center;
-        margin: 20px 0;
+        margin: 100px 0;
         padding: 50px 5px; /* Reducir el padding lateral en tabletas */
     }
 
@@ -323,7 +323,7 @@ body {
     .info {
         flex-direction: column; /* Colocar los elementos en columna */
         align-items: center;
-        margin: 60px 0;
+        margin: 100px 0;
         padding: 0 5px; /* Reducir el padding lateral en móviles */
     }
 
@@ -447,7 +447,7 @@ body {
     }
 
     .text-content h2 {
-        font-size: 18px; /* Reducir el tamaño del título */
+        font-size: 30px; /* Reducir el tamaño del título */
     }
 
     .image-content img {
