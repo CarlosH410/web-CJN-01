@@ -1,6 +1,8 @@
 /* Reset básico */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@
 body {
     font-family: "Poppins", sans-serif;
 
-    background-color:#e6e6e6;
+    background-color:#303c3a;
 
     
     
@@ -82,7 +84,7 @@ body {
 }
 
 .navbar .nav-links a {
-    color: #fff;
+    color: #eefffc;
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-size: 18px;
@@ -203,8 +205,9 @@ body {
 
 /* Sección Info */
 .info {
+    
 
-    background: linear-gradient(to bottom, #008080 , #e6e6e6 );/* Degradado de naranja a rosa */
+    background: linear-gradient(to bottom, #303c3a , #303c3a );/* Degradado de naranja a rosa */
     
     display: flex;
     flex-direction: row; /* Disposición en fila para pantallas grandes */
@@ -223,18 +226,19 @@ body {
     flex-direction: column; /* Colocar los elementos en columna */
     align-items: center;
     margin: 50px;
-    width: 400px;
+    width: 450px;
 }
 
 .info-somos p {
+    color: #c5fffa;
     font-size: 20px;
     padding-top: 40px;
     text-align: center;
 }
 
 .info-somos h2 {
-    color: #ffea00;
-    font-size: 35px;
+    color: #008080;
+    font-size: 50px;
     
 }
 
@@ -259,7 +263,7 @@ body {
 /* Elemento grande (ocupa todo el ancho) */
 .gallery-item.large {
     grid-column: 1 / -1;
-    height: 350px;
+    height: 400px;
     transition: transform 0.3s ease;
     
 }
@@ -346,7 +350,7 @@ body {
     }
 
     .gallery-item.large {
-        height: 150px; /* Reducir aún más la altura de la imagen grande */
+        height: 200px; /* Reducir aún más la altura de la imagen grande */
     }
 
     .gallery-item {
@@ -364,6 +368,7 @@ body {
     
     gap: 20px; /* Espacio entre el texto y la imagen */
     background-color: #008080;
+    
     margin: 0 200px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -378,6 +383,16 @@ body {
 
     
     
+}
+
+.text-content h2{
+    color: #303c3a;
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.text-content p{
+    color: #c5fffa;
 }
 
 /* Estilo para el contenido de la imagen */
@@ -447,7 +462,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-    background-color: #f4f4f9;
+    
 }
 
 .contact-container {
@@ -569,8 +584,9 @@ body {
 
 /* Estilo para el título de la sección */
 .eventos-section h2 {
-    font-size: 36px;
-    color: #333;
+    font-family: "Hachi Maru Pop", cursive;
+    font-size: 40px;
+    color: #008080;
     margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -818,5 +834,13 @@ body {
 /* Estilo para pantallas pequeñas */
 
 
+
+
+  .wave {
+    margin-bottom: -10px;
+    
+
+
+  }
 
 
