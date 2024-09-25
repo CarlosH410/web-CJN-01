@@ -152,7 +152,7 @@ body {
 /* Estilos del menú responsive */
 @media (max-width: 768px) {
     .navbar {
-        background-color: #3a9ea3;
+        background-color: #26a2ac;
     }
 
     .nav-links {
@@ -805,7 +805,7 @@ body {
 .service:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #29a6af;
+    background: linear-gradient(180deg, #29a6af, #3cc4ce);
     color: #fff;
 }
 .service:hover i {
@@ -834,7 +834,7 @@ body {
     transition: color 0.3s;
 }
 .highlight {
-    background-color: #29a6af;
+    background: linear-gradient(180deg, #29a6af, #3cc4ce);
     color: #fff;
 }
 .highlight i {
@@ -874,12 +874,12 @@ body {
 /* ------------------ EVENTOS ------------------ */
 
 .parra{
-    
+    margin-top: 50px;
     
     
     text-align: center;
     justify-content: center;
-    padding: 150px;
+    padding: 120px;
     padding-top: 20px;
     
 }
@@ -905,8 +905,9 @@ body {
     
     margin: auto;
     position: relative;
-    max-width: 1000px;
-    width: 90%;
+    width: 80%;
+    
+    
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -944,7 +945,7 @@ body {
 }
 .carousel-item img {
     width: 45%;
-    height: 450px;
+    height: 500px;
     border-radius: 10px;
     object-fit: cover;
     margin: 30px;
@@ -965,6 +966,7 @@ body {
     margin: 10px 0;
 }
 .carousel-controls {
+    
     position: absolute;
     top: 50%;
     left: 0;
@@ -1036,6 +1038,7 @@ body {
     }
     .carousel-item img {
         
+        height: 400px;
         margin-bottom: 20px;
         width: 90%;
     }
@@ -1047,13 +1050,28 @@ body {
         position: relative;
     }
 }
+@media (max-width: 480px) {
+
+    .carousel-item img {
+        
+        height: 300px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .carousel-item-content {
+        max-width: 90%;
+        
+    }
+    
+}
 
 
 /* ------------------ contacto ------------------ */
 .contacto{
     font-family: Arial, sans-serif;
     
-    height: 100vh;
+    height: 70vh;
    
     
     padding: 30px;
@@ -1063,7 +1081,7 @@ body {
 
 }
 .contact-info {
-    background-color: #e74c3c;
+    background: linear-gradient(180deg, #29a6af, #3cc4ce);
     color: white;
     padding: 30px;
     width: 250px;
