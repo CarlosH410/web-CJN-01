@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="carrusel.css">
+</head>
+<body>
+
+
+    <section class="mision">
+        <h2>Enfoque del Ministerio Juvenil</h2>
+
+        <div class="carta">
+            <div class="card-contenido">
+                <div class="card-imagen">
+
+                    <img src="/imagenes/imagen00-3.jpg" alt="">
+                </div>
+                <h3>Misión</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam delectus impedit accusamus ad porro. Quisquam et impedit vero assumenda obcaecati</p>
+    
+            </div>
+            <div class="card-contenido">
+                <div class="card-imagen">
+
+                    <img src="/imagenes/imagen00-3.jpg" alt="">
+                </div>
+                
+                <h3>Visión</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam delectus impedit accusamus ad porro. Quisquam et impedit vero assumenda obcaecati voluptatibus facilis </p>
+    
+            </div>
+            <div class="card-contenido">
+                <div class="card-imagen">
+
+                    <img src="/imagenes/imagen00-3.jpg" alt="">
+                </div>
+                <img src="" alt="">
+                <h3>Objetivo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam delectus impedit accusamus ad porro. Quisquam et impedit vero assumenda obcaecati voluptatibus facilis animi quasi a fuga ?</p>
+    
+            </div>
+            
+            
+            
+            
+            
+        
+
+        
+        </div>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+         <div class="carousel-item">
+          <img alt="Person standing against a pink wall" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-JsmSQzmTx5nTjq0PCU3bkHpT.png?st=2024-09-24T16%3A14%3A21Z&amp;se=2024-09-24T18%3A14%3A21Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A46%3A52Z&amp;ske=2024-09-24T23%3A46%3A52Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=1TVZUjKk1r/CuMPi4kc4H6DJEiu%2BNvRJxW%2BkeYA9KpA%3D" width="300"/>
+          <div class="text-overlay">
+           <h1>
+            Person
+           </h1>
+          </div>
+         </div>
+         <div class="carousel-item">
+          <img alt="Scenic view of a forest with mountains in the background" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-QwZ63kHIQ2jTthGxCr1XVbr1.png?st=2024-09-24T16%3A14%3A25Z&amp;se=2024-09-24T18%3A14%3A25Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A21%3A51Z&amp;ske=2024-09-24T23%3A21%3A51Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=0BDCmbSbRnROWURFIJiTXpH2SXz5CL3GiMeoXe%2BA4B8%3D" width="300"/>
+          <div class="text-overlay">
+           <h1>
+            In The Wilderness
+           </h1>
+           <button>
+            Book travel
+           </button>
+          </div>
+         </div>
+         <div class="carousel-item">
+          <img alt="Person playing a guitar" height="400" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-g37F6urvFbn1UwsZXZWTPBk0.png?st=2024-09-24T16%3A14%3A39Z&amp;se=2024-09-24T18%3A14%3A39Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-23T23%3A23%3A59Z&amp;ske=2024-09-24T23%3A23%3A59Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=xi28kWRA/OWBjojjoBm//UAgQ9vtUxUP9UPIB32WzXg%3D" width="300"/>
+          <div class="text-overlay">
+           <h1>
+            Guitar
+           </h1>
+          </div>
+         </div>
+        </div>
+        <div class="carousel-controls">
+         <i class="fas fa-chevron-left" onclick="prevSlide()">
+         </i>
+         <i class="fas fa-chevron-right" onclick="nextSlide()">
+         </i>
+        </div>
+       </div>
+       <script>
+        let currentIndex = 0;
+     
+             function showSlide(index) {
+                 const carouselInner = document.querySelector('.carousel-inner');
+                 const totalItems = document.querySelectorAll('.carousel-item').length;
+                 if (index >= totalItems) {
+                     currentIndex = 0;
+                 } else if (index < 0) {
+                     currentIndex = totalItems - 1;
+                 } else {
+                     currentIndex = index;
+                 }
+                 const offset = -currentIndex * 320; // 300px width + 20px margin
+                 carouselInner.style.transform = `translateX(${offset}px)`;
+             }
+     
+             function nextSlide() {
+                 showSlide(currentIndex + 1);
+             }
+     
+             function prevSlide() {
+                 showSlide(currentIndex - 1);
+             }
+       </script>
+
+    
+</body>
+</html>

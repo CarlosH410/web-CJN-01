@@ -32,7 +32,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
+// carrusel
 
 const carouselInner = document.querySelector('.carousel-inner');
  
@@ -40,7 +40,7 @@ const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
 let currentIndex = 0;
 const indicators = document.querySelectorAll('.indicator');
-const totalItems = 3; // Number of unique items
+const totalItems = 4; // Number of unique items
 
 prevBtn.addEventListener('click', () => {
     if (currentIndex > 0) {
@@ -101,6 +101,7 @@ function updateCarousel() {
         }
     });
 } 
+
 
 
 
