@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.prox h1 {
+    display: flex;
+    margin-top: 400px;
+    width: 100%;
+    
+    justify-content: center;
+  
+
+}
+
