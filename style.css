@@ -880,7 +880,7 @@ body {
 
 .parra{
     margin-top: 50px;
-    
+    background-color: #25a1ab;
     
     text-align: center;
     justify-content: center;
@@ -915,8 +915,7 @@ body {
     
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd
+    
 }
 
 
@@ -1036,6 +1035,7 @@ body {
 
 @media (max-width: 768px) {
     .parra{
+        background-color: transparent;
         padding: 0px;
     }
     .carousel-item {
@@ -1054,8 +1054,15 @@ body {
     .carousel-controls {
         position: relative;
     }
+
+    .carousel-container{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd
+
+    }
 }
 @media (max-width: 480px) {
+    
 
     .carousel-item img {
         margin-top: 10px;
@@ -1071,6 +1078,7 @@ body {
     .carousel-container{
         width: 95%;
         height: 630px;
+        
     }
     
 }
