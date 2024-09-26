@@ -241,7 +241,7 @@ body {
 }
 
 .info-somos h2 {
-    color: #b1da54;
+    color: #d1ff66;
     font-size: 50px;
     
 }
@@ -347,7 +347,7 @@ body {
     }
 
     .info-somos h2 {
-        font-size: 30px; /* Reducir el tamaño del título */
+        font-size: 40px; /* Reducir el tamaño del título */
     }
 
     .gallery {
@@ -396,13 +396,14 @@ body {
 }
 
 .text-content h2{
-    color: #f5f8f7;
+    color: #d1ff66;
     font-size: 50px;
     margin-bottom: 60px;
 }
 
 .text-content p{
     color: #c0cfca;
+    font-size: 16px;
 }
 
 /* Estilo para el contenido de la imagen */
@@ -865,6 +866,10 @@ body {
     }
 }
 @media (max-width: 480px) {
+
+    .header-section h1 {
+        font-size: 33px;
+    }
     .service {
         width: 100%;
     }
@@ -1138,7 +1143,7 @@ body {
     border-radius: 4px;
 }
 .contact-form button {
-    background-color: #e74c3c;
+    background-color: #25a1ab;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -1146,7 +1151,7 @@ body {
     cursor: pointer;
 }
 .contact-form button:hover {
-    background-color: #c0392b;
+    background-color: #23c7d2;
 }
 @media (max-width: 780px) {
     .contacto{
@@ -1172,6 +1177,9 @@ body {
     .contact-form button {
         width: 100%;
         padding: 15px;
+    }
+    .contacto{
+        height: 900px;
     }
 
 }
